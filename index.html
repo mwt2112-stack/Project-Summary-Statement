@@ -152,29 +152,30 @@ td.hl-cell {
 /* ── TABLE ── */
 .table-wrap { padding: 0 4px 4px; position: relative; }
 table.rt { border-collapse: collapse; font-size: 9.5px; table-layout: auto; width: 100%; }
-col.c-fund  { width: 22px; } col.c-fdesc { width: 110px; } col.c-acct  { width: 42px; } col.c-adesc { width: 160px; }
-col.c-pyytd { width: 72px; } col.c-pyact { width: 72px; } col.c-origb { width: 72px; } col.c-ce    { width: 72px; }
-col.c-mo    { width: 58px; } col.c-yr    { width: 72px; }
-col.c-bbc   { width: 72px; } col.c-ov    { width: 58px; } col.c-enc   { width: 58px; } col.c-pre   { width: 58px; }
-col.c-bba   { width: 72px; } col.c-pct   { width: 36px; }
+col.c-fund  { width: 36px; } col.c-fdesc { width: 130px; } col.c-acct  { width: 52px; } col.c-adesc { width: 190px; }
+col.c-pyytd { width: 76px; } col.c-pyact { width: 76px; } col.c-origb { width: 76px; } col.c-ce    { width: 76px; }
+col.c-mo    { width: 62px; } col.c-yr    { width: 76px; }
+col.c-bbc   { width: 82px; } col.c-ov    { width: 62px; } col.c-enc   { width: 76px; } col.c-pre   { width: 76px; }
+col.c-bba   { width: 82px; } col.c-pct   { width: 48px; }
 
 .rt thead { position: sticky; top: 0; z-index: 4; background: #fff; }
 .rt thead tr.grp-row th { font-size: 9px; font-weight: bold; text-align: center; padding: 1px 3px; border: none; background: #fff; }
-th.span-atd { border-bottom: 1px solid #333 !important; } th.span-com { border-bottom: 1px solid #333 !important; }
+th.span-atd { border: none !important; border-bottom: 1px solid #555 !important; }
+th.span-com  { border: none !important; border-bottom: 1px solid #555 !important; }
 .rt tbody td { padding: 0px 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; vertical-align: middle; font-size: 9px; height: 14px; line-height: 14px; }
 .rt tbody td.r  { text-align: right; } .rt tbody td.bl { text-align: right; color: #00419e; } .rt tbody td.g  { text-align: right; color: #666; }
 .rt tbody tr:hover td { background: #f5f5f5; }
-/* Header row */
-.rt thead tr.hdr-row th { font-size: 8.5px; font-weight: bold; text-align: right; padding: 1px 3px; border-top: 1px solid #555; border-bottom: 1px solid #555; vertical-align: bottom; line-height: 1.2; white-space: normal; background: #fff; word-break: break-word; }
-.rt thead tr.hdr-row th.left { text-align: left; }
-tr.subtotal-sal td { font-weight: bold; border-top: 1px solid #333; border-bottom: 1px solid #333; padding: 1px 3px; height: 14px; line-height: 14px; }
-tr.subtotal-otps td { font-weight: bold; border-top: 1px solid #333; border-bottom: 1px solid #333; padding: 1px 3px; height: 14px; line-height: 14px; }
-tr.total-direct td { font-weight: bold; border-top: 1px solid #333; border-bottom: 1px solid #333; padding: 1px 3px; height: 14px; line-height: 14px; }
-tr.net-direct td { font-weight: bold; padding: 1px 3px; height: 14px; line-height: 14px; }
-tr.net-indirect td { font-weight: bold; border-top: 1px solid #333; border-bottom: 1px solid #333; padding: 1px 3px; height: 14px; line-height: 14px; }
-tr.fund-total td { font-weight: bold; border-top: 1px solid #333; border-bottom: 3px double #111; padding: 1px 3px; height: 14px; line-height: 14px; }
-tr.proj-total td { font-weight: bold; border-top: 1px solid #333; border-bottom: 3px double #111; padding: 1px 3px; height: 14px; line-height: 14px; }
-tr.lbl-rev td { font-weight: bold; border-top: 1px solid #333; padding: 1px 3px; height: 14px; line-height: 14px; }
+/* Header row — underline only (bottom border) */
+.rt thead tr.hdr-row th { font-size: 8.5px; font-weight: bold; text-align: right; padding: 1px 3px; border: none !important; border-bottom: 1px solid #555 !important; vertical-align: bottom; line-height: 1.2; white-space: normal; background: #fff; word-break: break-word; }
+.rt thead tr.hdr-row th.left { text-align: left; border-bottom: 1px solid #555 !important; }
+tr.subtotal-sal td  { font-weight: bold; border: none !important; padding: 1px 3px; height: 14px; line-height: 14px; }
+tr.subtotal-otps td { font-weight: bold; border: none !important; padding: 1px 3px; height: 14px; line-height: 14px; }
+tr.total-direct td  { font-weight: bold; border: none !important; padding: 1px 3px; height: 14px; line-height: 14px; }
+tr.net-direct td    { font-weight: bold; border: none !important; padding: 1px 3px; height: 14px; line-height: 14px; }
+tr.net-indirect td  { font-weight: bold; border: none !important; padding: 1px 3px; height: 14px; line-height: 14px; }
+tr.fund-total td    { font-weight: bold; border: none !important; padding: 1px 3px; height: 14px; line-height: 14px; }
+tr.proj-total td    { font-weight: bold; border: none !important; padding: 1px 3px; height: 14px; line-height: 14px; }
+tr.lbl-rev td       { font-weight: bold; border: none !important; padding: 1px 3px; height: 14px; line-height: 14px; }
 tr.spacer td { height: 4px; }
 
 /* fund balance section */
@@ -315,10 +316,11 @@ table.fb { border-collapse: collapse; font-size: 10px; margin: 0 auto; }
     </colgroup>
     <thead>
       <tr class="grp-row">
-        <th colspan="8" class="empty"></th>
-        <th colspan="2" class="span-atd">Actual to Date</th>
-        <th colspan="4" class="span-com">Commitments</th>
-        <th colspan="2" class="empty"></th>
+        <th colspan="8" style="border:none;background:#fff;"></th>
+        <th colspan="2" class="span-atd" style="font-size:9px;font-weight:bold;text-align:center;padding:1px 3px;background:#fff;">Actual to Date</th>
+        <th style="border:none;background:#fff;"></th>
+        <th colspan="3" class="span-com" style="font-size:9px;font-weight:bold;text-align:center;padding:1px 3px;background:#fff;">Commitments</th>
+        <th colspan="2" style="border:none;background:#fff;"></th>
       </tr>
       <tr class="hdr-row">
         <th class="left clickable first-hint" data-key="fund_code">Fund</th>
@@ -341,193 +343,396 @@ table.fb { border-collapse: collapse; font-size: 10px; margin: 0 auto; }
     </thead>
     <tbody>
       <tr>
-        <td>01</td><td>General Unrestricted Fund</td><td>40000</td>
-        <td class="acct-desc-clickable" data-acct="40000" tabindex="0">TUITION</td>
-        <td class="r col-prioryear">(125,450)</td><td class="r col-prioryear">(2,145,320)</td>
-        <td class="r col-budget">(2,750,000)</td><td class="r col-budget">(3,210,500)</td>
-        <td class="bl col-actual">0</td><td class="bl col-actual">(1,145,230)</td>
-        <td class="r">(2,065,270)</td>
-        <td class="r col-commitments">0</td><td class="r col-commitments">0</td><td class="r col-commitments">0</td>
-        <td class="r col-available">(2,065,270)</td><td class="r col-available">36%</td>
+        <td>01</td><td>General Unrestricted Fund</td><td>53300</td>
+        <td class="acct-desc-clickable" data-acct="53300" tabindex="0">OFFICER OF ADMINISTRATION</td>
+        <td class="r col-prioryear">795,011</td><td class="r col-prioryear">1,035,560</td>
+        <td class="r col-budget">1,130,796</td><td class="r col-budget">1,042,252</td>
+        <td class="bl col-actual">79,665</td><td class="bl col-actual">686,483</td>
+        <td class="r">355,769</td>
+        <td class="r col-commitments">0</td><td class="r col-commitments">236,762</td><td class="r col-commitments">0</td>
+        <td class="r col-available">119,007</td><td class="r col-available">66%</td>
       </tr>
       <tr>
-        <td>01</td><td>General Unrestricted Fund</td><td>40095</td>
-        <td class="acct-desc-clickable" data-acct="40095" tabindex="0">TUITION REV-SEMESTER SPLIT</td>
-        <td class="r col-prioryear">(2,145,320)</td><td class="r col-prioryear">(18,750)</td>
-        <td class="r col-budget">0</td><td class="r col-budget">0</td>
-        <td class="bl col-actual">0</td><td class="bl col-actual">(2,120,100)</td>
-        <td class="r">2,120,100</td>
+        <td>01</td><td>General Unrestricted Fund</td><td>54400</td>
+        <td class="acct-desc-clickable" data-acct="54400" tabindex="0">STUDENTS - WORK STUDY</td>
+        <td class="r col-prioryear">2,956</td><td class="r col-prioryear">4,735</td>
+        <td class="r col-budget">4,440</td><td class="r col-budget">10,804</td>
+        <td class="bl col-actual">1,459</td><td class="bl col-actual">11,775</td>
+        <td class="r">(971)</td>
         <td class="r col-commitments">0</td><td class="r col-commitments">0</td><td class="r col-commitments">0</td>
-        <td class="r col-available">2,120,100</td><td class="g col-available">N/A</td>
+        <td class="r col-available">(971)</td><td class="r col-available">109%</td>
       </tr>
       <tr>
-        <td>01</td><td>General Unrestricted Fund</td><td>40500</td>
-        <td class="acct-desc-clickable" data-acct="40500" tabindex="0">SCHOOL FEES</td>
-        <td class="r col-prioryear">(8,900)</td><td class="r col-prioryear">(178,640)</td>
-        <td class="r col-budget">(245,000)</td><td class="r col-budget">(267,300)</td>
-        <td class="bl col-actual">0</td><td class="bl col-actual">(98,750)</td>
-        <td class="r">(168,550)</td>
-        <td class="r col-commitments">0</td><td class="r col-commitments">0</td><td class="r col-commitments">0</td>
-        <td class="r col-available">(168,550)</td><td class="r col-available">37%</td>
-      </tr>
-      <tr class="lbl-rev">
-        <td colspan="3"></td>
-        <td class="acct-desc-clickable" data-acct="total_revenue" tabindex="0" style="text-align:left;padding-left:4px;font-weight:bold;">Total Revenue</td>
-        <td class="r col-prioryear">(2,479,670)</td><td class="r col-prioryear">(2,340,960)</td>
-        <td class="r col-budget">(2,995,000)</td><td class="r col-budget">(3,477,800)</td>
-        <td class="r col-actual">0</td><td class="r col-actual">(3,364,080)</td>
-        <td class="r">113,720</td>
-        <td class="r col-commitments">0</td><td class="r col-commitments">0</td><td class="r col-commitments">0</td>
-        <td class="r col-available">113,720</td><td class="r col-available">103%</td>
-      </tr>
-      <tr class="spacer"><td colspan="16"></td></tr>
-      <tr>
-        <td>01</td><td>General Unrestricted Fund</td><td>50100</td>
-        <td class="acct-desc-clickable" data-acct="50100" tabindex="0">PROF (NONTENURED)</td>
-        <td class="r col-prioryear">7,875</td><td class="r col-prioryear">7,875</td>
-        <td class="r col-budget">8,111</td><td class="r col-budget">0</td>
-        <td class="bl col-actual">0</td><td class="bl col-actual">0</td>
-        <td class="r">0</td>
-        <td class="r col-commitments">0</td><td class="r col-commitments">0</td><td class="r col-commitments">0</td>
-        <td class="r col-available">0</td><td class="g col-available">N/A</td>
-      </tr>
-      <tr>
-        <td>01</td><td>General Unrestricted Fund</td><td>50110</td>
-        <td class="acct-desc-clickable" data-acct="50110" tabindex="0">ASSOC PROF (NONTENURED)</td>
-        <td class="r col-prioryear">15,750</td><td class="r col-prioryear">15,750</td>
-        <td class="r col-budget">18,223</td><td class="r col-budget">18,200</td>
-        <td class="bl col-actual">0</td><td class="bl col-actual">16,200</td>
+        <td>01</td><td>General Unrestricted Fund</td><td>54410</td>
+        <td class="acct-desc-clickable" data-acct="54410" tabindex="0">STUDENTS-CASUAL (FT)</td>
+        <td class="r col-prioryear">1,544</td><td class="r col-prioryear">1,781</td>
+        <td class="r col-budget">0</td><td class="r col-budget">10,137</td>
+        <td class="bl col-actual">1,425</td><td class="bl col-actual">10,137</td>
         <td class="r">0</td>
         <td class="r col-commitments">0</td><td class="r col-commitments">0</td><td class="r col-commitments">0</td>
         <td class="r col-available">0</td><td class="r col-available">100%</td>
       </tr>
       <tr>
-        <td>01</td><td>General Unrestricted Fund</td><td>53300</td>
-        <td class="acct-desc-clickable" data-acct="53300" tabindex="0">OFFICER OF ADMINISTRATION</td>
-        <td class="r col-prioryear">22,500</td><td class="r col-prioryear">22,500</td>
-        <td class="r col-budget">24,750</td><td class="r col-budget">24,500</td>
-        <td class="bl col-actual">0</td><td class="bl col-actual">20,800</td>
-        <td class="r">3,700</td>
-        <td class="r col-commitments">0</td><td class="r col-commitments">0</td><td class="r col-commitments">0</td>
-        <td class="r col-available">3,700</td><td class="r col-available">85%</td>
-      </tr>
-      <tr>
-        <td>01</td><td>General Unrestricted Fund</td><td>54410</td>
-        <td class="acct-desc-clickable" data-acct="54410" tabindex="0">STUDENTS-CASUAL (FT)</td>
-        <td class="r col-prioryear">18,750</td><td class="r col-prioryear">18,750</td>
-        <td class="r col-budget">22,500</td><td class="r col-budget">21,000</td>
-        <td class="bl col-actual">0</td><td class="bl col-actual">15,600</td>
-        <td class="r">5,400</td>
-        <td class="r col-commitments">0</td><td class="r col-commitments">0</td><td class="r col-commitments">0</td>
-        <td class="r col-available">5,400</td><td class="r col-available">74%</td>
-      </tr>
-      <tr>
         <td>01</td><td>General Unrestricted Fund</td><td>59010</td>
         <td class="acct-desc-clickable" data-acct="59010" tabindex="0">FRINGE BENEFIT CHARGE</td>
-        <td class="r col-prioryear">32,100</td><td class="r col-prioryear">32,100</td>
-        <td class="r col-budget">38,200</td><td class="r col-budget">37,500</td>
-        <td class="bl col-actual">0</td><td class="bl col-actual">31,800</td>
-        <td class="r">5,700</td>
+        <td class="r col-prioryear">238,824</td><td class="r col-prioryear">310,989</td>
+        <td class="r col-budget">337,871</td><td class="r col-budget">309,976</td>
+        <td class="bl col-actual">23,899</td><td class="bl col-actual">206,845</td>
+        <td class="r">103,131</td>
+        <td class="r col-commitments">0</td><td class="r col-commitments">71,029</td><td class="r col-commitments">0</td>
+        <td class="r col-available">32,102</td><td class="r col-available">67%</td>
+      </tr>
+      <tr>
+        <td>01</td><td>General Unrestricted Fund</td><td>59020</td>
+        <td class="acct-desc-clickable" data-acct="59020" tabindex="0">FRINGE ADDITIONAL</td>
+        <td class="r col-prioryear">29,853</td><td class="r col-prioryear">38,873</td>
+        <td class="r col-budget">45,050</td><td class="r col-budget">41,331</td>
+        <td class="bl col-actual">3,187</td><td class="bl col-actual">27,641</td>
+        <td class="r">13,690</td>
+        <td class="r col-commitments">0</td><td class="r col-commitments">9,471</td><td class="r col-commitments">0</td>
+        <td class="r col-available">4,219</td><td class="r col-available">67%</td>
+      </tr>
+      <tr>
+        <td>01</td><td>General Unrestricted Fund</td><td>59030</td>
+        <td class="acct-desc-clickable" data-acct="59030" tabindex="0">FRINGE STUDENTS</td>
+        <td class="r col-prioryear">0</td><td class="r col-prioryear">78</td>
+        <td class="r col-budget">0</td><td class="r col-budget">0</td>
+        <td class="bl col-actual">116</td><td class="bl col-actual">446</td>
+        <td class="r">(446)</td>
         <td class="r col-commitments">0</td><td class="r col-commitments">0</td><td class="r col-commitments">0</td>
-        <td class="r col-available">5,700</td><td class="r col-available">85%</td>
+        <td class="r col-available">(446)</td><td class="g col-available">N/A</td>
       </tr>
       <tr class="subtotal-sal">
         <td colspan="3"></td>
         <td class="acct-desc-clickable" data-acct="subtotal_sal" tabindex="0" style="text-align:left;padding-left:4px;">Sub-Total Salary and Fringe</td>
-        <td class="r col-prioryear">809,646</td><td class="r col-prioryear">941,242</td>
-        <td class="r col-budget">1,037,342</td><td class="r col-budget">1,034,147</td>
-        <td class="r col-actual">32,453</td><td class="r col-actual">888,124</td>
-        <td class="r">146,023</td>
-        <td class="r col-commitments">0</td><td class="r col-commitments">92,662</td><td class="r col-commitments">0</td>
-        <td class="r col-available">53,362</td><td class="r col-available">94%</td>
+        <td class="r col-prioryear">1,068,188</td><td class="r col-prioryear">1,392,017</td>
+        <td class="r col-budget">1,518,157</td><td class="r col-budget">1,414,500</td>
+        <td class="r col-actual">109,751</td><td class="r col-actual">943,327</td>
+        <td class="r">471,173</td>
+        <td class="r col-commitments">0</td><td class="r col-commitments">317,262</td><td class="r col-commitments">0</td>
+        <td class="r col-available">153,911</td><td class="r col-available">67%</td>
       </tr>
       <tr class="spacer"><td colspan="16"></td></tr>
       <tr>
-        <td>01</td><td>General Unrestricted Fund</td><td>61099</td>
-        <td class="acct-desc-clickable" data-acct="61099" tabindex="0">SUMMER FINANCIAL AID BUDGET</td>
-        <td class="r col-prioryear">724,600</td><td class="r col-prioryear">1,870,540</td>
-        <td class="r col-budget">752,542</td><td class="r col-budget">1,037,005</td>
-        <td class="bl col-actual">(5,880)</td><td class="bl col-actual">(50,095)</td>
-        <td class="r">1,087,100</td>
-        <td class="r col-commitments">0</td><td class="r col-commitments">0</td><td class="r col-commitments">0</td>
-        <td class="r col-available">1,087,100</td><td class="r col-available">(4%)</td>
-      </tr>
-      <tr>
-        <td>01</td><td>General Unrestricted Fund</td><td>61230</td>
-        <td class="acct-desc-clickable" data-acct="61230" tabindex="0">AID TO NONSTUDENTS</td>
-        <td class="r col-prioryear">5,250</td><td class="r col-prioryear">8,400</td>
-        <td class="r col-budget">12,000</td><td class="r col-budget">14,500</td>
-        <td class="bl col-actual">0</td><td class="bl col-actual">9,800</td>
-        <td class="r">4,700</td>
-        <td class="r col-commitments">0</td><td class="r col-commitments">0</td><td class="r col-commitments">0</td>
-        <td class="r col-available">4,700</td><td class="r col-available">67%</td>
-      </tr>
-      <tr>
         <td>01</td><td>General Unrestricted Fund</td><td>61405</td>
         <td class="acct-desc-clickable" data-acct="61405" tabindex="0">SUPPLIES AND MATERIALS-GENERAL</td>
-        <td class="r col-prioryear">14,541</td><td class="r col-prioryear">23,074</td>
-        <td class="r col-budget">16,866</td><td class="r col-budget">30,530</td>
-        <td class="bl col-actual">0</td><td class="bl col-actual">19,502</td>
-        <td class="r">11,028</td>
+        <td class="r col-prioryear">168</td><td class="r col-prioryear">540</td>
+        <td class="r col-budget">1,084</td><td class="r col-budget">1,084</td>
+        <td class="bl col-actual">85</td><td class="bl col-actual">85</td>
+        <td class="r">999</td>
         <td class="r col-commitments">0</td><td class="r col-commitments">0</td><td class="r col-commitments">0</td>
-        <td class="r col-available">11,028</td><td class="r col-available">63%</td>
+        <td class="r col-available">999</td><td class="r col-available">8%</td>
       </tr>
       <tr>
         <td>01</td><td>General Unrestricted Fund</td><td>61410</td>
         <td class="acct-desc-clickable" data-acct="61410" tabindex="0">OFFICE SUPPLIES-GENERAL</td>
-        <td class="r col-prioryear">3,200</td><td class="r col-prioryear">5,400</td>
-        <td class="r col-budget">6,500</td><td class="r col-budget">7,200</td>
-        <td class="bl col-actual">0</td><td class="bl col-actual">4,850</td>
-        <td class="r">2,350</td>
+        <td class="r col-prioryear">199</td><td class="r col-prioryear">199</td>
+        <td class="r col-budget">150</td><td class="r col-budget">150</td>
+        <td class="bl col-actual">0</td><td class="bl col-actual">725</td>
+        <td class="r">(575)</td>
         <td class="r col-commitments">0</td><td class="r col-commitments">0</td><td class="r col-commitments">0</td>
-        <td class="r col-available">2,350</td><td class="r col-available">67%</td>
+        <td class="r col-available">(575)</td><td class="r col-available">483%</td>
       </tr>
       <tr>
-        <td>01</td><td>General Unrestricted Fund</td><td>64505</td>
-        <td class="acct-desc-clickable" data-acct="64505" tabindex="0">CONSULTANTS-GENERAL</td>
-        <td class="r col-prioryear">18,750</td><td class="r col-prioryear">35,600</td>
-        <td class="r col-budget">45,000</td><td class="r col-budget">52,300</td>
-        <td class="bl col-actual">1,200</td><td class="bl col-actual">28,500</td>
-        <td class="r">23,800</td>
-        <td class="r col-commitments">0</td><td class="r col-commitments">15,420</td><td class="r col-commitments">0</td>
-        <td class="r col-available">8,380</td><td class="r col-available">84%</td>
+        <td>01</td><td>General Unrestricted Fund</td><td>61650</td>
+        <td class="acct-desc-clickable" data-acct="61650" tabindex="0">FOOD SUPPLIES-GENERAL</td>
+        <td class="r col-prioryear">0</td><td class="r col-prioryear">0</td>
+        <td class="r col-budget">0</td><td class="r col-budget">0</td>
+        <td class="bl col-actual">122</td><td class="bl col-actual">253</td>
+        <td class="r">(253)</td>
+        <td class="r col-commitments">0</td><td class="r col-commitments">0</td><td class="r col-commitments">0</td>
+        <td class="r col-available">(253)</td><td class="g col-available">N/A</td>
+      </tr>
+      <tr>
+        <td>01</td><td>General Unrestricted Fund</td><td>61655</td>
+        <td class="acct-desc-clickable" data-acct="61655" tabindex="0">GROCERIES</td>
+        <td class="r col-prioryear">0</td><td class="r col-prioryear">0</td>
+        <td class="r col-budget">323</td><td class="r col-budget">323</td>
+        <td class="bl col-actual">0</td><td class="bl col-actual">0</td>
+        <td class="r">323</td>
+        <td class="r col-commitments">0</td><td class="r col-commitments">0</td><td class="r col-commitments">0</td>
+        <td class="r col-available">323</td><td class="r col-available">0%</td>
+      </tr>
+      <tr>
+        <td>01</td><td>General Unrestricted Fund</td><td>61690</td>
+        <td class="acct-desc-clickable" data-acct="61690" tabindex="0">FOOD-STAFF &amp; FACULTY</td>
+        <td class="r col-prioryear">1,043</td><td class="r col-prioryear">1,043</td>
+        <td class="r col-budget">1,043</td><td class="r col-budget">1,043</td>
+        <td class="bl col-actual">0</td><td class="bl col-actual">136</td>
+        <td class="r">907</td>
+        <td class="r col-commitments">0</td><td class="r col-commitments">0</td><td class="r col-commitments">0</td>
+        <td class="r col-available">907</td><td class="r col-available">13%</td>
+      </tr>
+      <tr>
+        <td>01</td><td>General Unrestricted Fund</td><td>61730</td>
+        <td class="acct-desc-clickable" data-acct="61730" tabindex="0">HOUSEHOLD SUPPLIES</td>
+        <td class="r col-prioryear">51</td><td class="r col-prioryear">51</td>
+        <td class="r col-budget">51</td><td class="r col-budget">51</td>
+        <td class="bl col-actual">0</td><td class="bl col-actual">0</td>
+        <td class="r">51</td>
+        <td class="r col-commitments">0</td><td class="r col-commitments">0</td><td class="r col-commitments">0</td>
+        <td class="r col-available">51</td><td class="r col-available">0%</td>
+      </tr>
+      <tr>
+        <td>01</td><td>General Unrestricted Fund</td><td>61910</td>
+        <td class="acct-desc-clickable" data-acct="61910" tabindex="0">MINOR EQUIPMENT-GENERAL</td>
+        <td class="r col-prioryear">192</td><td class="r col-prioryear">192</td>
+        <td class="r col-budget">408</td><td class="r col-budget">408</td>
+        <td class="bl col-actual">0</td><td class="bl col-actual">0</td>
+        <td class="r">408</td>
+        <td class="r col-commitments">0</td><td class="r col-commitments">0</td><td class="r col-commitments">0</td>
+        <td class="r col-available">408</td><td class="r col-available">0%</td>
+      </tr>
+      <tr>
+        <td>01</td><td>General Unrestricted Fund</td><td>61925</td>
+        <td class="acct-desc-clickable" data-acct="61925" tabindex="0">MINOR EQUIPMENT-COMPUTERS</td>
+        <td class="r col-prioryear">0</td><td class="r col-prioryear">873</td>
+        <td class="r col-budget">600</td><td class="r col-budget">900</td>
+        <td class="bl col-actual">638</td><td class="bl col-actual">818</td>
+        <td class="r">82</td>
+        <td class="r col-commitments">0</td><td class="r col-commitments">0</td><td class="r col-commitments">0</td>
+        <td class="r col-available">82</td><td class="r col-available">91%</td>
+      </tr>
+      <tr>
+        <td>01</td><td>General Unrestricted Fund</td><td>62005</td>
+        <td class="acct-desc-clickable" data-acct="62005" tabindex="0">PUBLICATION COSTS-GENERAL</td>
+        <td class="r col-prioryear">0</td><td class="r col-prioryear">0</td>
+        <td class="r col-budget">0</td><td class="r col-budget">3,716</td>
+        <td class="bl col-actual">33,780</td><td class="bl col-actual">33,780</td>
+        <td class="r">(30,064)</td>
+        <td class="r col-commitments">0</td><td class="r col-commitments">0</td><td class="r col-commitments">0</td>
+        <td class="r col-available">(30,064)</td><td class="r col-available">N/A</td>
+      </tr>
+      <tr>
+        <td>01</td><td>General Unrestricted Fund</td><td>62010</td>
+        <td class="acct-desc-clickable" data-acct="62010" tabindex="0">PUBLICATION COSTS-INTERNAL</td>
+        <td class="r col-prioryear">3,757</td><td class="r col-prioryear">4,457</td>
+        <td class="r col-budget">0</td><td class="r col-budget">3,350</td>
+        <td class="bl col-actual">3,590</td><td class="bl col-actual">4,238</td>
+        <td class="r">(888)</td>
+        <td class="r col-commitments">0</td><td class="r col-commitments">0</td><td class="r col-commitments">0</td>
+        <td class="r col-available">(888)</td><td class="r col-available">126%</td>
+      </tr>
+      <tr>
+        <td>01</td><td>General Unrestricted Fund</td><td>62015</td>
+        <td class="acct-desc-clickable" data-acct="62015" tabindex="0">PRINT SERVICES-INTERNAL</td>
+        <td class="r col-prioryear">7,175</td><td class="r col-prioryear">7,563</td>
+        <td class="r col-budget">9,283</td><td class="r col-budget">3,350</td>
+        <td class="bl col-actual">3,590</td><td class="bl col-actual">5,990</td>
+        <td class="r">(2,640)</td>
+        <td class="r col-commitments">0</td><td class="r col-commitments">0</td><td class="r col-commitments">0</td>
+        <td class="r col-available">(2,640)</td><td class="r col-available">179%</td>
+      </tr>
+      <tr>
+        <td>01</td><td>General Unrestricted Fund</td><td>62020</td>
+        <td class="acct-desc-clickable" data-acct="62020" tabindex="0">PRINTING COSTS</td>
+        <td class="r col-prioryear">37,617</td><td class="r col-prioryear">37,617</td>
+        <td class="r col-budget">70,331</td><td class="r col-budget">58,500</td>
+        <td class="bl col-actual">0</td><td class="bl col-actual">11,003</td>
+        <td class="r">47,497</td>
+        <td class="r col-commitments">0</td><td class="r col-commitments">0</td><td class="r col-commitments">0</td>
+        <td class="r col-available">47,497</td><td class="r col-available">19%</td>
+      </tr>
+      <tr>
+        <td>01</td><td>General Unrestricted Fund</td><td>63005</td>
+        <td class="acct-desc-clickable" data-acct="63005" tabindex="0">RENTAL - GENERAL</td>
+        <td class="r col-prioryear">0</td><td class="r col-prioryear">0</td>
+        <td class="r col-budget">2,000</td><td class="r col-budget">2,000</td>
+        <td class="bl col-actual">378</td><td class="bl col-actual">378</td>
+        <td class="r">1,622</td>
+        <td class="r col-commitments">0</td><td class="r col-commitments">0</td><td class="r col-commitments">0</td>
+        <td class="r col-available">1,622</td><td class="r col-available">19%</td>
+      </tr>
+      <tr>
+        <td>01</td><td>General Unrestricted Fund</td><td>63070</td>
+        <td class="acct-desc-clickable" data-acct="63070" tabindex="0">RENTAL - VEHICLE</td>
+        <td class="r col-prioryear">278</td><td class="r col-prioryear">278</td>
+        <td class="r col-budget">278</td><td class="r col-budget">278</td>
+        <td class="bl col-actual">0</td><td class="bl col-actual">0</td>
+        <td class="r">278</td>
+        <td class="r col-commitments">0</td><td class="r col-commitments">0</td><td class="r col-commitments">0</td>
+        <td class="r col-available">278</td><td class="r col-available">0%</td>
+      </tr>
+      <tr>
+        <td>01</td><td>General Unrestricted Fund</td><td>63075</td>
+        <td class="acct-desc-clickable" data-acct="63075" tabindex="0">RENTAL - PARKING</td>
+        <td class="r col-prioryear">0</td><td class="r col-prioryear">0</td>
+        <td class="r col-budget">75</td><td class="r col-budget">206</td>
+        <td class="bl col-actual">75</td><td class="bl col-actual">150</td>
+        <td class="r">56</td>
+        <td class="r col-commitments">0</td><td class="r col-commitments">0</td><td class="r col-commitments">0</td>
+        <td class="r col-available">56</td><td class="r col-available">73%</td>
+      </tr>
+      <tr>
+        <td>01</td><td>General Unrestricted Fund</td><td>63090</td>
+        <td class="acct-desc-clickable" data-acct="63090" tabindex="0">RENTAL - INTERNAL</td>
+        <td class="r col-prioryear">200</td><td class="r col-prioryear">200</td>
+        <td class="r col-budget">0</td><td class="r col-budget">0</td>
+        <td class="bl col-actual">300</td><td class="bl col-actual">300</td>
+        <td class="r">(300)</td>
+        <td class="r col-commitments">0</td><td class="r col-commitments">0</td><td class="r col-commitments">0</td>
+        <td class="r col-available">(300)</td><td class="g col-available">N/A</td>
+      </tr>
+      <tr>
+        <td>01</td><td>General Unrestricted Fund</td><td>63210</td>
+        <td class="acct-desc-clickable" data-acct="63210" tabindex="0">DESKTOP SUPPORT-CUIT</td>
+        <td class="r col-prioryear">0</td><td class="r col-prioryear">0</td>
+        <td class="r col-budget">471</td><td class="r col-budget">471</td>
+        <td class="bl col-actual">0</td><td class="bl col-actual">0</td>
+        <td class="r">471</td>
+        <td class="r col-commitments">0</td><td class="r col-commitments">0</td><td class="r col-commitments">0</td>
+        <td class="r col-available">471</td><td class="r col-available">0%</td>
+      </tr>
+      <tr>
+        <td>01</td><td>General Unrestricted Fund</td><td>63211</td>
+        <td class="acct-desc-clickable" data-acct="63211" tabindex="0">SOFTWARE SITE LICENSE-CUIT</td>
+        <td class="r col-prioryear">20</td><td class="r col-prioryear">20</td>
+        <td class="r col-budget">359</td><td class="r col-budget">359</td>
+        <td class="bl col-actual">0</td><td class="bl col-actual">0</td>
+        <td class="r">359</td>
+        <td class="r col-commitments">0</td><td class="r col-commitments">0</td><td class="r col-commitments">0</td>
+        <td class="r col-available">359</td><td class="r col-available">0%</td>
+      </tr>
+      <tr>
+        <td>01</td><td>General Unrestricted Fund</td><td>63260</td>
+        <td class="acct-desc-clickable" data-acct="63260" tabindex="0">SOFTWARE PURCHASE</td>
+        <td class="r col-prioryear">9,120</td><td class="r col-prioryear">9,120</td>
+        <td class="r col-budget">30,960</td><td class="r col-budget">30,960</td>
+        <td class="bl col-actual">0</td><td class="bl col-actual">13,981</td>
+        <td class="r">16,979</td>
+        <td class="r col-commitments">0</td><td class="r col-commitments">9,338</td><td class="r col-commitments">0</td>
+        <td class="r col-available">7,641</td><td class="r col-available">45%</td>
+      </tr>
+      <tr>
+        <td>01</td><td>General Unrestricted Fund</td><td>63265</td>
+        <td class="acct-desc-clickable" data-acct="63265" tabindex="0">SOFTWARE LICENSE</td>
+        <td class="r col-prioryear">0</td><td class="r col-prioryear">0</td>
+        <td class="r col-budget">2,730</td><td class="r col-budget">2,730</td>
+        <td class="bl col-actual">0</td><td class="bl col-actual">474</td>
+        <td class="r">2,256</td>
+        <td class="r col-commitments">0</td><td class="r col-commitments">0</td><td class="r col-commitments">0</td>
+        <td class="r col-available">2,256</td><td class="r col-available">17%</td>
+      </tr>
+      <tr>
+        <td>01</td><td>General Unrestricted Fund</td><td>63280</td>
+        <td class="acct-desc-clickable" data-acct="63280" tabindex="0">WEB EXPENSES</td>
+        <td class="r col-prioryear">3,688</td><td class="r col-prioryear">4,383</td>
+        <td class="r col-budget">2,749</td><td class="r col-budget">7,028</td>
+        <td class="bl col-actual">363</td><td class="bl col-actual">2,925</td>
+        <td class="r">4,103</td>
+        <td class="r col-commitments">0</td><td class="r col-commitments">0</td><td class="r col-commitments">0</td>
+        <td class="r col-available">4,103</td><td class="r col-available">42%</td>
+      </tr>
+      <tr>
+        <td>01</td><td>General Unrestricted Fund</td><td>63281</td>
+        <td class="acct-desc-clickable" data-acct="63281" tabindex="0">WEB SERVICES</td>
+        <td class="r col-prioryear">87,410</td><td class="r col-prioryear">108,692</td>
+        <td class="r col-budget">106,325</td><td class="r col-budget">43,538</td>
+        <td class="bl col-actual">0</td><td class="bl col-actual">25,000</td>
+        <td class="r">18,538</td>
+        <td class="r col-commitments">0</td><td class="r col-commitments">0</td><td class="r col-commitments">0</td>
+        <td class="r col-available">18,538</td><td class="r col-available">57%</td>
+      </tr>
+      <tr>
+        <td>01</td><td>General Unrestricted Fund</td><td>63407</td>
+        <td class="acct-desc-clickable" data-acct="63407" tabindex="0">COMMUNICATIONS - INTERNET</td>
+        <td class="r col-prioryear">0</td><td class="r col-prioryear">0</td>
+        <td class="r col-budget">0</td><td class="r col-budget">3,092</td>
+        <td class="bl col-actual">0</td><td class="bl col-actual">3,092</td>
+        <td class="r">0</td>
+        <td class="r col-commitments">0</td><td class="r col-commitments">0</td><td class="r col-commitments">0</td>
+        <td class="r col-available">0</td><td class="r col-available">100%</td>
+      </tr>
+      <tr>
+        <td>01</td><td>General Unrestricted Fund</td><td>63410</td>
+        <td class="acct-desc-clickable" data-acct="63410" tabindex="0">COMMUNICATION CHARGES</td>
+        <td class="r col-prioryear">5,509</td><td class="r col-prioryear">7,221</td>
+        <td class="r col-budget">4,321</td><td class="r col-budget">6,338</td>
+        <td class="bl col-actual">582</td><td class="bl col-actual">5,242</td>
+        <td class="r">1,096</td>
+        <td class="r col-commitments">0</td><td class="r col-commitments">0</td><td class="r col-commitments">0</td>
+        <td class="r col-available">1,096</td><td class="r col-available">83%</td>
+      </tr>
+      <tr>
+        <td>01</td><td>General Unrestricted Fund</td><td>63430</td>
+        <td class="acct-desc-clickable" data-acct="63430" tabindex="0">MOBILE SERVICE CHARGES - CUIT</td>
+        <td class="r col-prioryear">1,794</td><td class="r col-prioryear">2,392</td>
+        <td class="r col-budget">1,396</td><td class="r col-budget">1,396</td>
+        <td class="bl col-actual">203</td><td class="bl col-actual">1,830</td>
+        <td class="r">(434)</td>
+        <td class="r col-commitments">0</td><td class="r col-commitments">0</td><td class="r col-commitments">0</td>
+        <td class="r col-available">(434)</td><td class="r col-available">131%</td>
       </tr>
       <tr class="subtotal-otps">
         <td colspan="3"></td>
         <td class="acct-desc-clickable" data-acct="subtotal_otps" tabindex="0" style="text-align:left;padding-left:4px;">Sub-Total OTPS</td>
-        <td class="r col-prioryear">983,652</td><td class="r col-prioryear">2,006,046</td>
-        <td class="r col-budget">2,511,250</td><td class="r col-budget">2,837,108</td>
-        <td class="r col-actual">26,739</td><td class="r col-actual">2,558,634</td>
-        <td class="r">278,474</td>
-        <td class="r col-commitments">0</td><td class="r col-commitments">105,826</td><td class="r col-commitments">0</td>
-        <td class="r col-available">172,648</td><td class="r col-available">93%</td>
+        <td class="r col-prioryear">158,221</td><td class="r col-prioryear">184,841</td>
+        <td class="r col-budget">234,937</td><td class="r col-budget">171,271</td>
+        <td class="r col-actual">43,706</td><td class="r col-actual">110,400</td>
+        <td class="r">60,871</td>
+        <td class="r col-commitments">0</td><td class="r col-commitments">9,338</td><td class="r col-commitments">0</td>
+        <td class="r col-available">51,533</td><td class="r col-available">64%</td>
       </tr>
       <tr class="total-direct">
-        <td colspan="4" style="padding-left:4px;font-weight:bold;">Total Direct Expenses Prior to F&amp;A</td>
-        <td class="r col-prioryear">1,793,652</td><td class="r col-prioryear">2,006,046</td>
-        <td class="r col-budget">2,511,250</td><td class="r col-budget">2,837,108</td>
-        <td class="r col-actual">26,739</td><td class="r col-actual">2,558,634</td>
-        <td class="r">278,474</td>
-        <td class="r col-commitments">0</td><td class="r col-commitments">105,826</td><td class="r col-commitments">0</td>
-        <td class="r col-available">172,648</td><td class="r col-available">93%</td>
+        <td colspan="3"></td>
+        <td style="text-align:left;padding-left:4px;font-weight:bold;">Total Direct Expenses Prior to F&amp;A</td>
+        <td class="r col-prioryear">1,226,409</td><td class="r col-prioryear">1,576,858</td>
+        <td class="r col-budget">1,753,094</td><td class="r col-budget">1,585,771</td>
+        <td class="r col-actual">153,457</td><td class="r col-actual">1,053,727</td>
+        <td class="r">532,044</td>
+        <td class="r col-commitments">0</td><td class="r col-commitments">326,600</td><td class="r col-commitments">0</td>
+        <td class="r col-available">205,444</td><td class="r col-available">66%</td>
       </tr>
       <tr class="net-direct">
-        <td colspan="4" style="padding-left:4px;font-weight:bold;">Net Direct Activities</td>
-        <td class="r col-prioryear">(359,548)</td><td class="r col-prioryear">(141,654)</td>
-        <td class="r col-budget">(32,760)</td><td class="r col-budget">(262,757)</td>
-        <td class="r col-actual">26,739</td><td class="r col-actual">(545,481)</td>
-        <td class="r">282,724</td>
-        <td class="r col-commitments">0</td><td class="r col-commitments">176,898</td><td class="r col-commitments">0</td>
-        <td class="r col-available">176,898</td><td class="r col-available">167%</td>
+        <td colspan="3"></td>
+        <td style="text-align:left;padding-left:4px;font-weight:bold;">Net Direct Activities</td>
+        <td class="r col-prioryear">1,226,409</td><td class="r col-prioryear">1,576,858</td>
+        <td class="r col-budget">1,753,094</td><td class="r col-budget">1,585,771</td>
+        <td class="r col-actual">153,457</td><td class="r col-actual">1,053,727</td>
+        <td class="r">532,044</td>
+        <td class="r col-commitments">0</td><td class="r col-commitments">326,600</td><td class="r col-commitments">0</td>
+        <td class="r col-available">205,444</td><td class="r col-available">66%</td>
+      </tr>
+      <tr class="spacer"><td colspan="16"></td></tr>
+      <tr>
+        <td>01</td><td>General Unrestricted Fund</td><td>70400</td>
+        <td class="acct-desc-clickable" data-acct="70400" tabindex="0">IS-GENERAL FUND TRANSFER</td>
+        <td class="r col-prioryear">0</td><td class="r col-prioryear">(2,038,657)</td>
+        <td class="r col-budget">(2,302,589)</td><td class="r col-budget">(1,952,020)</td>
+        <td class="bl col-actual">0</td><td class="bl col-actual">0</td>
+        <td class="r">(1,952,020)</td>
+        <td class="r col-commitments">0</td><td class="r col-commitments">0</td><td class="r col-commitments">0</td>
+        <td class="r col-available">(1,952,020)</td><td class="g col-available">N/A</td>
+      </tr>
+      <tr class="net-indirect">
+        <td colspan="3"></td>
+        <td style="text-align:left;padding-left:4px;font-weight:bold;">Net Indirect Activities</td>
+        <td class="r col-prioryear">0</td><td class="r col-prioryear">(2,038,657)</td>
+        <td class="r col-budget">(2,302,589)</td><td class="r col-budget">(1,952,020)</td>
+        <td class="r col-actual">0</td><td class="r col-actual">0</td>
+        <td class="r">(1,952,020)</td>
+        <td class="r col-commitments">0</td><td class="r col-commitments">0</td><td class="r col-commitments">0</td>
+        <td class="r col-available">(1,952,020)</td><td class="g col-available">N/A</td>
+      </tr>
+      <tr class="fund-total">
+        <td colspan="3"></td>
+        <td style="text-align:left;padding-left:4px;font-weight:bold;">Total Fund 01</td>
+        <td class="r col-prioryear">1,226,409</td><td class="r col-prioryear">(461,799)</td>
+        <td class="r col-budget">(549,495)</td><td class="r col-budget">(366,249)</td>
+        <td class="r col-actual">153,457</td><td class="r col-actual">1,053,727</td>
+        <td class="r">(1,419,976)</td>
+        <td class="r col-commitments">0</td><td class="r col-commitments">326,600</td><td class="r col-commitments">0</td>
+        <td class="r col-available">(1,746,576)</td><td class="g col-available">N/A</td>
       </tr>
       <tr class="proj-total">
-        <td colspan="4" style="padding-left:4px;font-weight:bold;">TOTAL PROJECT</td>
-        <td class="r col-prioryear">(359,548)</td><td class="r col-prioryear">(141,654)</td>
-        <td class="r col-budget">0</td><td class="r col-budget">(229,997)</td>
-        <td class="r col-actual">26,739</td><td class="r col-actual">(545,481)</td>
-        <td class="r">315,484</td>
-        <td class="r col-commitments">0</td><td class="r col-commitments">105,826</td><td class="r col-commitments">0</td>
-        <td class="r col-available">209,658</td><td class="r col-available">191%</td>
+        <td colspan="3"></td>
+        <td style="text-align:left;padding-left:4px;font-weight:bold;">TOTAL PROJECT</td>
+        <td class="r col-prioryear">1,226,409</td><td class="r col-prioryear">(461,799)</td>
+        <td class="r col-budget">(549,495)</td><td class="r col-budget">(366,249)</td>
+        <td class="r col-actual">153,457</td><td class="r col-actual">1,053,727</td>
+        <td class="r">(1,419,976)</td>
+        <td class="r col-commitments">0</td><td class="r col-commitments">326,600</td><td class="r col-commitments">0</td>
+        <td class="r col-available">(1,746,576)</td><td class="g col-available">N/A</td>
       </tr>
     </tbody>
   </table>
@@ -909,6 +1114,7 @@ const ACCOUNT_DETAILS = {
   "61230":{ label:"61230 — Aid to Nonstudents", definition:"Financial aid or support provided to non-student recipients.", interpret:"This covers aid given outside traditional student aid.", why:"Aid to nonstudents must be tracked separately for reporting and compliance.", naturalAccounts:[{code:"61230",desc:"AID TO NONSTUDENTS",def:"Aid provided to non-student recipients."}]},
   "61405":{ label:"61405 — Supplies and Materials – General", definition:"General supplies and materials expense.", interpret:"This covers consumables and general supplies.", why:"It tracks non-capital supply costs.", naturalAccounts:[{code:"61405",desc:"SUPPLIES AND MATERIALS-GENERAL",def:"General supplies and consumables."},{code:"61410",desc:"OFFICE SUPPLIES",def:"Office-specific supplies."}]},
   "61410":{ label:"61410 — Office Supplies – General", definition:"General office supplies and consumables.", interpret:"This covers everyday office materials.", why:"Office supplies are a routine operating expense that must be managed within budget.", naturalAccounts:[{code:"61410",desc:"OFFICE SUPPLIES-GENERAL",def:"General office supply expenses."},{code:"61415",desc:"FORMS AND PRINTING",def:"Internal forms and printing supplies."}]},
+  "70400":{ label:"70400 — IS-General Fund Transfer", definition:"Internal transfer from the General Unrestricted Fund to support indirect activities.", interpret:"This represents a fund-to-fund transfer, not a direct expense or revenue.", why:"Internal transfers reallocate resources across funds and must be tracked separately from direct activities.", naturalAccounts:[{code:"70400",desc:"IS-GENERAL FUND TRANSFER",def:"Internal subsidy transfer from general unrestricted fund."}]},
   "64505":{ label:"64505 — Consultants – General", definition:"Fees paid to external consultants and contractors.", interpret:"This covers professional services from outside vendors.", why:"Consultant fees are contracted services that must be tracked separately from staff.", naturalAccounts:[{code:"64505",desc:"CONSULTANTS-GENERAL",def:"General consultant fees."},{code:"64510",desc:"SPECIALIZED CONSULTANTS",def:"Specialized professional consulting."}]},
   "total_revenue":{ label:"Total Revenue", definition:"Aggregate of all revenue sources for the project.", interpret:"Total income from all revenue accounts.", why:"Provides snapshot of total funding and revenue performance.", naturalAccounts:[{code:"40000",desc:"TUITION",def:"Revenue from student tuition charges."},{code:"40095",desc:"TUITION REV-SEMESTER SPLIT",def:"Semester-split tuition revenue."},{code:"40500",desc:"SCHOOL FEES",def:"Non-tuition student fees."}]},
   "subtotal_sal":{ label:"Sub-Total Salary and Fringe", definition:"Sum of all salary and fringe benefit expenses.", interpret:"Total personnel cost including benefits.", why:"Shows total human resources investment before other operating expenses.", naturalAccounts:[{code:"50100",desc:"PROF (NONTENURED)",def:"Non-tenured professor salary."},{code:"53300",desc:"OFFICER OF ADMINISTRATION",def:"Administrative officer salary."},{code:"59010",desc:"FRINGE BENEFIT CHARGE",def:"Allocated fringe benefits."}]},
